@@ -1,5 +1,4 @@
-import { ButtonStylized } from '@/components/ButtonStylized';
-import { InputStylized } from '@/components/InputStylized';
+import { ButtonStylized, InputStylized, Screen } from '@/components';
 import { useUser } from '@/contexts/User';
 import { StackNavigation } from '@/routes/auth.routes';
 import { Ionicons } from '@expo/vector-icons';
@@ -28,7 +27,7 @@ export function Login() {
   }
 
   return (
-    <View className="p-4 flex-1 justify-center content-center">
+    <Screen style="p-4 flex-1 justify-center content-center">
       <View className="py-6 px-3.5 justify-center rounded-2xl bg-slate-200 gap-y-5">
         <View className="gap-x-2 flex-row items-center">
           <Ionicons name="log-in-outline" size={30} color={colors.green[500]} />
@@ -62,6 +61,6 @@ export function Login() {
 
         <ButtonStylized text="Entrar" onPress={handleLoginVerification} />
       </View>
-    </View>
+    </Screen>
   );
 }

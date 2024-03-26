@@ -1,5 +1,4 @@
-import { ButtonStylized } from '@/components/ButtonStylized';
-import { InputStylized } from '@/components/InputStylized';
+import { ButtonStylized, InputStylized } from '@/components';
 import { useUser } from '@/contexts/User';
 import { StackNavigation } from '@/routes/auth.routes';
 import { Ionicons } from '@expo/vector-icons';

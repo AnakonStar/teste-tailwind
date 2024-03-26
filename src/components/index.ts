@@ -1,5 +1,4 @@
-import { ButtonStylized } from './ButtonStylized';
-import { InputStylized } from './InputStylized';
-import { PostItem } from './PostItem';
-
-export { ButtonStylized, InputStylized, PostItem };
+export * from './ButtonStylized/ButtonStylized';
+export * from './InputStylized/InputStylized';
+export * from './PostItem/PostItem';
+export * from './Screen';
