@@ -1,4 +1,4 @@
-import { ButtonStylizedType } from '@/dtos/ButtonStylized';
+import { ButtonStylizedType } from '@/dtos';
 import { Text, TouchableOpacity } from 'react-native';
 
 export function ButtonStylized({ text, ...rest }: ButtonStylizedType) {

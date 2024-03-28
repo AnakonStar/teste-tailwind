@@ -1,5 +1,3 @@
-import { Login, Register } from './Auth';
-import { Home } from './Home';
-import { Profile } from './Profile';
-
-export { Home, Login, Profile, Register };
+export * from './Auth';
+export * from './Home';
+export * from './Profile';

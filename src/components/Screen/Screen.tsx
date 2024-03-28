@@ -1,5 +1,9 @@
 import { ChildrenType } from '@/dtos';
+import { styled } from 'nativewind';
 import { View } from 'react-native';
+import LinearGradient, {
+  LinearGradientProps,
+} from 'react-native-linear-gradient';
 import { Header } from './Header';
 
 type Props = ChildrenType & {
@@ -7,21 +11,17 @@ type Props = ChildrenType & {
   style?: string;
 };
 
-// type LinearProps = ChildrenType & LinearGradientProps
+type LinearProps = ChildrenType & LinearGradientProps;
 
-// function LinearGradientReturn({ colors, children}: LinearProps) {
-//     return (
-//         <LinearGradient colors={colors}>
-//             {children}
-//         </LinearGradient>
-//     )
-// }
+function LinearGradientReturn({ colors, children }: LinearProps) {
+  return <LinearGradient colors={colors}>{children}</LinearGradient>;
+}
 
-// const LinearBackground = styled(LinearGradientReturn, {
-// props: {
-//     colors: [colors.green[500], colors.green[100]]
-// }
-// });
+const LinearBackground = styled(LinearGradientReturn, {
+  props: {
+    colors: '',
+  },
+});
 
 export function Screen({ style, headerHasGoBack, ...rest }: Props) {
   return (

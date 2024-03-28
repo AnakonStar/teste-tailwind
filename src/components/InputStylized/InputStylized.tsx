@@ -1,4 +1,4 @@
-import { InputStylizedType } from '@/dtos/InputStylized';
+import { InputStylizedType } from '@/dtos';
 import { useState } from 'react';
 import { TextInput } from 'react-native';
 import colors from 'tailwindcss/colors';

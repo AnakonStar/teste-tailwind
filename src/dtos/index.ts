@@ -1,4 +1,5 @@
-import { ChildrenType } from './Children';
-import { UserType } from './User';
-
-export { ChildrenType, UserType };
+export * from './ButtonStylized';
+export * from './Children';
+export * from './InputStylized';
+export * from './PostItem';
+export * from './User';
